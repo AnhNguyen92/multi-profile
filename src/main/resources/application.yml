@@ -2,7 +2,7 @@ logging:
   level:
     .: error
     org.springframework: ERROR
-    com.gmail: ERROR
+    com.demo.multiprofile: DEBUG
 
 spring:
   profiles:
@@ -17,19 +17,21 @@ spring:
   profiles: local
 server:
   email: local@gmail.com
+
 ---
 
 spring:
   profiles: dev
 server:
   email: dev@gmail.com
-  
+
 ---
 
 spring:
   profiles: staging
 server:
   email: staging@gmail.com
+
 ---
 
 spring:
